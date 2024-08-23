@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import styles from "./Post.module.css";
 
-export default function Post({ post }) {
+const Post = ({ post }) => {
   return (
     <div className={styles.post}>
       <img
@@ -15,4 +15,6 @@ export default function Post({ post }) {
       <button className={styles.botaoLer}>Ler</button>
     </div>
   );
-}
+};
+
+export default Post;
