@@ -1,11 +1,13 @@
 import styles from "./Rodape.module.css";
-import { ReactComponent as MarcaRegistrada } from "../../assets/marca_registrada.svg";
+const src = "/marca_registrada.svg";
 
-export default function Rodape() {
+const Rodape = () => {
   return (
     <footer className={styles.rodape}>
-      <MarcaRegistrada />
+      <img src={src} />
       Desenvolvido por @guitotti.
     </footer>
   );
-}
+};
+
+export default Rodape;
