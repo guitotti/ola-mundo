@@ -1,8 +1,11 @@
+import Banner from "../../components/Banner";
+
 const Inicio = () => {
   return (
-    <div>
+    <main>
+      <Banner />
       <h1>Ola, mundo!</h1>;
-    </div>
+    </main>
   );
 };
 
