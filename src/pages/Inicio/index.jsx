@@ -1,12 +1,23 @@
+import styles from "./Inicio.module.css";
+
+import posts from "../../json/posts.json";
+import Post from "../../components/Post";
 import Banner from "../../components/Banner";
 
-const Inicio = () => {
+
+export default function Inicio() {
   return (
     <main>
       <Banner />
-      <h1>Ola, mundo!</h1>;
-    </main>
-  );
-};
 
-export default Inicio;
+      <ul className={styles.posts}>
+        {posts.map((post) => (
+          <li key={post.id}>
+            <Post post={post} />
+          </li>
+        ))}
+      </ul>
+    </main>
+    
+  );
+}
