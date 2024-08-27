@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import styles from "./Post.module.css";
 
-const Post = ({ post }) => {
+const PostCard = ({ post }) => {
   return (
     <div className={styles.post}>
       <img
@@ -17,4 +17,4 @@ const Post = ({ post }) => {
   );
 };
 
-export default Post;
+export default PostCard;
